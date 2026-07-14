@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Primo Brand — Templates</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1A1B2E;--surface:#2C2F3F;--green:#12B981;--green-deep:#0A6B4B;--parchment:#EFE1CC;--mist:#B1B1B1;--paper:#FFFFFF;
+--c1:#12B981;--c2:#F0E442;--c3:#D55E00;--c4:#B39DDB;--c5:#7E57C2;
+--fs-h2:55px;--fs-h3:34px;--fs-body:21px;--fs-cap:13px;--sp-sm:13px;--sp-md:21px;--sp-lg:34px;--sp-xl:55px;--sp-2xl:89px;--maxw:1080px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Roboto,system-ui,sans-serif;font-size:var(--fs-body);line-height:1.619;color:var(--ink);background:var(--paper)}
+h1,h2,h3{font-family:Montserrat,system-ui,sans-serif;font-weight:800;margin:0}
+p{max-width:66ch} a{color:inherit}
+.nav{position:sticky;top:0;z-index:9;background:var(--ink);border-bottom:1px solid #10111D}
+.nav .in{max-width:var(--maxw);margin:0 auto;padding:0 28px;height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav img{height:26px;display:block}
+.nav .links{display:flex;gap:22px;flex-wrap:wrap}
+.nav .links a{font-family:Montserrat;font-weight:600;font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--mist);text-decoration:none}
+.nav .links a.on,.nav .links a:hover{color:var(--green)}
+.band{padding:var(--sp-2xl) 28px} .band-inner{max-width:var(--maxw);margin:0 auto}
+.dark{background:var(--ink);color:var(--paper)} .parch{background:var(--parchment)}
+.eyebrow{display:inline-flex;align-items:center;gap:11px;font-family:Montserrat;font-weight:600;font-size:var(--fs-cap);letter-spacing:.32em;text-transform:uppercase;color:#7a7a7a;margin-bottom:var(--sp-lg)}
+.eyebrow .sq{width:9px;height:9px;background:var(--green-deep)}
+.dark .eyebrow{color:var(--mist)} .dark .eyebrow .sq{background:var(--green)}
+.h2{font-size:var(--fs-h2);line-height:1.15;letter-spacing:-.01em;margin-bottom:var(--sp-lg)}
+.h3{font-size:var(--fs-h3);line-height:1.25;margin:var(--sp-xl) 0 var(--sp-md)}
+.cap{font-size:var(--fs-cap);line-height:1.615;color:#7a7a7a} .dark .cap{color:var(--mist)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-md)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-md)}
+@media(max-width:820px){.grid2,.grid3{grid-template-columns:1fr}.h2{font-size:34px}}
+.card{background:var(--paper);border:1px solid #ededed;border-radius:10px;padding:var(--sp-md)}
+.swatch{border-radius:10px;overflow:hidden;border:1px solid #ededed;background:var(--paper)}
+.swatch .chip{height:89px} .swatch .meta{padding:var(--sp-sm) var(--sp-md);font-size:var(--fs-cap);line-height:1.6;color:#555}
+.swatch .meta b{font-family:Montserrat;font-weight:600;font-size:15px;display:block;color:var(--ink)}
+.logo-tile{border-radius:10px;padding:var(--sp-xl);display:flex;align-items:center;justify-content:center;min-height:210px}
+.logo-tile img{max-width:78%;height:auto}
+.rulebox{border-left:3px solid var(--green-deep);padding:var(--sp-sm) var(--sp-md);background:#fafafa;border-radius:0 8px 8px 0;margin:var(--sp-md) 0}
+.dark .rulebox{background:var(--surface);border-left-color:var(--green)}
+table{border-collapse:collapse;width:100%;font-size:16px;background:var(--paper);color:var(--ink)}
+th,td{border:1px solid #e6e6e6;padding:10px 14px;text-align:left;vertical-align:top}
+th{font-family:Montserrat;font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;background:#fafafa}
+.pass{color:var(--green-deep);font-weight:700}
+.footer{background:var(--ink);color:var(--mist);padding:var(--sp-lg) 28px;font-size:var(--fs-cap)}
+.footer .in{max-width:var(--maxw);margin:0 auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.footer a{color:var(--green);text-decoration:none;border-bottom:1px solid var(--green)}
+.pagenav{display:flex;justify-content:space-between;gap:16px;max-width:var(--maxw);margin:0 auto;padding:var(--sp-lg) 28px}
+.pagenav a{font-family:Montserrat;font-weight:600;font-size:14px;color:var(--green-deep);text-decoration:none}
+</style></head>
+<body>
+<nav class="nav"><div class="in"><a href="index.html"><img src="primo-lockup-on-dark.svg" alt="Primo"></a><div class="links"><a href="index.html">Overview</a><a href="logo.html">Logo</a><a href="color-and-type.html">Colour & Type</a><a href="templates.html" class="on">Templates</a><a href="social-media.html">Social Media</a><a href="motion.html">Motion</a><a href="rules-of-use.html">Rules of Use</a></div></div></nav>
+
+<header class="band dark" style="padding-bottom:var(--sp-xl)"><div class="band-inner">
+<div class="eyebrow"><span class="sq"></span>04 · TEMPLATES</div>
+<h1 class="h2">Documents, decks, and email — rendered.</h1>
+<p style="color:var(--mist)">Specimens at true proportions. Paper is a light surface, so every accent below is Signal Green Deep; decks alternate Indigo and Paper with bright green only on the dark slides.</p>
+</div></header>
+<section class="band" style="padding-top:var(--sp-xl)"><div class="band-inner">
+<div style="display:flex;gap:34px;flex-wrap:wrap;align-items:flex-start">
+<div>
+<div style="width:238px;height:336px;overflow:hidden;border-radius:10px;box-shadow:0 10px 30px rgba(26,27,46,.18)">
+<div style="width:794px;height:1123px;transform:scale(0.3);transform-origin:top left;position:relative;font-family:Roboto"><div style="position:absolute;inset:0;background:#fff;padding:70px 80px;font-family:Roboto;color:#3a3a42">
+<div style="font-family:Montserrat;font-weight:800;font-size:52px;color:#1A1B2E">JESSE CRUZ</div>
+<div style="font-family:Montserrat;font-weight:600;font-size:22px;letter-spacing:.14em;color:#0A6B4B;margin-top:8px">DEPUTY HEAD OF DIVISION · MEDIA &amp; SOCIAL MEDIA</div>
+<div style="font-size:20px;color:#9a9a9a;border-bottom:4px solid #0A6B4B;padding-bottom:14px;margin-top:8px">email · phone · portfolio · citizenship</div>
+<div style="font-family:Montserrat;font-weight:800;font-size:26px;color:#1A1B2E;margin-top:40px;border-bottom:2px solid #e3e3e6;padding-bottom:10px">PROFILE</div>
+<div style="font-size:22px;line-height:1.55;margin-top:16px">Senior communications leader with 15 years across the UN system…</div>
+<div style="font-family:Montserrat;font-weight:800;font-size:26px;color:#1A1B2E;margin-top:40px;border-bottom:2px solid #e3e3e6;padding-bottom:10px">EXPERIENCE</div>
+<div style="font-size:22px;margin-top:18px"><b style="color:#1A1B2E">Principal</b> — Primo Strategic Communication <span style="float:right;color:#9a9a9a">2026 – present</span></div>
+<div style="font-size:21px;line-height:1.5;margin-top:10px"><span style="color:#0A6B4B;font-weight:700">–</span> <b style="color:#1A1B2E">Lead strategic communications</b> for the ITU's WTPF-26…</div>
+<div style="font-size:21px;line-height:1.5;margin-top:8px"><span style="color:#0A6B4B;font-weight:700">–</span> <b style="color:#1A1B2E">Architected an autonomous AI agent</b> producing a daily brief…</div>
+</div></div>
+</div>
+<p class="cap" style="margin:10px 0 0;max-width:238px"><b style="color:var(--ink)">CV / letter — A4 (794×1123 @96dpi)</b><br>The document pattern: name · Deep eyebrow role line · ONE Deep hairline · bold lead verbs · Deep bullet dashes. Months on every date.</p>
+</div>
+<div style="flex:1;min-width:300px">
+<div class="rulebox" style="margin-top:0"><span style="font-size:17px"><b>Paper documents.</b> Accent = Signal Green Deep #0A6B4B, exactly three ways: the uppercase eyebrow role line, ONE hairline under the header, bullet dash glyphs. Montserrat 700/800 headings; Roboto body; months on every date; A4 for European/international institutions, US Letter for US companies. Generation specs live in the application-tailor skill. <b>EN 301 549 Chapter 10</b> covers these documents — conformance is a procurement credential.</span></div>
+<h3 class="h3" style="margin-top:var(--sp-lg)">Email signature</h3>
+<div class="card" style="max-width:520px;font-size:15px;line-height:1.5">
+<div style="font-family:Montserrat;font-weight:800;font-size:18px">Jesse Cruz</div>
+<div style="color:var(--green-deep);font-weight:500;font-size:13px">Principal · Primo Strategic Communication</div>
+<div style="height:2px;background:var(--green-deep);width:55px;margin:10px 0"></div>
+<div class="cap">primo.communication.io@gmail.com · w0rldcit1zen.github.io/Portfolio<br>Meaning that moves institutions.</div>
+</div>
+<p class="cap" style="margin-top:8px">System-stack fallbacks; email renders on white, so every accent is Deep.</p>
+</div>
+</div>
+<h3 class="h3">Decks</h3>
+<div style="display:flex;gap:34px;flex-wrap:wrap"><div>
+<div style="width:384px;height:216px;overflow:hidden;border-radius:10px;box-shadow:0 10px 30px rgba(26,27,46,.18)">
+<div style="width:1920px;height:1080px;transform:scale(0.2);transform-origin:top left;position:relative;font-family:Roboto"><div style="position:absolute;inset:0;background:#1A1B2E"></div><div style="position:absolute;left:0;right:0;top:412px;border-top:2px dashed rgba(18,185,129,.55)"></div><div style="position:absolute;left:0;right:0;top:667px;border-top:2px dashed rgba(18,185,129,.55)"></div><span style="position:absolute;right:24px;top:366px;font-family:Montserrat;font-size:24px;color:#12B981">0.382</span><span style="position:absolute;right:24px;top:621px;font-family:Montserrat;font-size:24px;color:#12B981">0.618</span>
+<div style="position:absolute;left:100px;top:100px"><img src="primo-lockup-on-dark.svg" style="height:52px" alt=""></div>
+<div style="position:absolute;left:100px;right:100px;top:413px;font-family:Montserrat;font-weight:800;font-size:96px;line-height:1.1;color:#fff">Communication strategy <span style="color:#12B981">2026–2028</span></div>
+<div style="position:absolute;left:100px;top:760px;font-family:Montserrat;font-weight:300;font-size:38px;color:#B1B1B1">Client name · Month 2026 · CONFIDENTIAL</div></div>
+</div>
+<p class="cap" style="margin:10px 0 0;max-width:384px"><b style="color:var(--ink)">Deck — title slide (16:9)</b><br>Indigo field · title at 0.382 anchor (guides shown) · lockup top-left · meta line Montserrat Light.</p>
+</div><div>
+<div style="width:384px;height:216px;overflow:hidden;border-radius:10px;box-shadow:0 10px 30px rgba(26,27,46,.18)">
+<div style="width:1920px;height:1080px;transform:scale(0.2);transform-origin:top left;position:relative;font-family:Roboto"><div style="position:absolute;inset:0;background:#fff"></div>
+<div style="position:absolute;left:100px;top:90px;font-family:Montserrat;font-weight:600;font-size:26px;letter-spacing:.3em;color:#0A6B4B">■&nbsp;SECTION 02 · AUDIENCE</div>
+<div style="position:absolute;left:100px;top:170px;font-family:Montserrat;font-weight:800;font-size:64px;color:#1A1B2E">Three audiences, one narrative.</div>
+<div style="position:absolute;left:100px;top:340px;width:520px;font-size:30px;line-height:1.55;color:#3a3a42">Body copy at deck scale — 30px floor, 66ch measure, Deep accents only on this light surface.</div>
+<div style="position:absolute;right:100px;top:340px;width:1050px;height:560px;background:#EFE1CC;border-radius:14px;padding:50px"><div style="font-family:Montserrat;font-weight:800;font-size:120px;color:#1A1B2E">1.3M</div><div style="font-size:30px;color:#1A1B2E;margin-top:8px">Stat panel on Parchment — the warm surface doing amber's old job.</div></div>
+<div style="position:absolute;left:100px;bottom:60px;font-size:22px;color:#9a9a9a">Primo Strategic Communication LLC · 12</div></div>
+</div>
+<p class="cap" style="margin:10px 0 0;max-width:384px"><b style="color:var(--ink)">Deck — content slide (16:9)</b><br>Paper surface · Deep eyebrow + accents · Parchment stat panel · footer with legal name + page number.</p>
+</div></div>
+<h3 class="h3">Motion (primo-motion)</h3>
+<p>Remotion reads <code>dist/tokens.ts</code> — the same tokens, no hand-copied hex. The three delivery formats mirror the social specimens: 1080×1350, 1080×1920, 1920×1080. Charts obey the five-series ramp; focal frames land on the golden section.</p>
+</div></section>
+<div class="pagenav"><a href="color-and-type.html">← Colour &amp; Type</a><a href="social-media.html">Social Media →</a></div>
+
+<div class="footer"><div class="in"><span>Primo Strategic Communication LLC · Brand Book v2.0 · Built to be received by everyone</span><span>Source of truth: tokens.json (primo-brand skill) · <a href="https://w0rldcit1zen.github.io/Portfolio/">Portfolio</a></span></div></div>
+</body></html>

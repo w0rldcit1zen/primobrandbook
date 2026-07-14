@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Primo Brand — Motion</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1A1B2E;--surface:#2C2F3F;--green:#12B981;--green-deep:#0A6B4B;--parchment:#EFE1CC;--mist:#B1B1B1;--paper:#FFFFFF;
+--c1:#12B981;--c2:#F0E442;--c3:#D55E00;--c4:#B39DDB;--c5:#7E57C2;
+--fs-h2:55px;--fs-h3:34px;--fs-body:21px;--fs-cap:13px;--sp-sm:13px;--sp-md:21px;--sp-lg:34px;--sp-xl:55px;--sp-2xl:89px;--maxw:1080px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Roboto,system-ui,sans-serif;font-size:var(--fs-body);line-height:1.619;color:var(--ink);background:var(--paper)}
+h1,h2,h3{font-family:Montserrat,system-ui,sans-serif;font-weight:800;margin:0}
+p{max-width:66ch} a{color:inherit}
+.nav{position:sticky;top:0;z-index:9;background:var(--ink);border-bottom:1px solid #10111D}
+.nav .in{max-width:var(--maxw);margin:0 auto;padding:0 28px;height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav img{height:26px;display:block}
+.nav .links{display:flex;gap:22px;flex-wrap:wrap}
+.nav .links a{font-family:Montserrat;font-weight:600;font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--mist);text-decoration:none}
+.nav .links a.on,.nav .links a:hover{color:var(--green)}
+.band{padding:var(--sp-2xl) 28px} .band-inner{max-width:var(--maxw);margin:0 auto}
+.dark{background:var(--ink);color:var(--paper)} .parch{background:var(--parchment)}
+.eyebrow{display:inline-flex;align-items:center;gap:11px;font-family:Montserrat;font-weight:600;font-size:var(--fs-cap);letter-spacing:.32em;text-transform:uppercase;color:#7a7a7a;margin-bottom:var(--sp-lg)}
+.eyebrow .sq{width:9px;height:9px;background:var(--green-deep)}
+.dark .eyebrow{color:var(--mist)} .dark .eyebrow .sq{background:var(--green)}
+.h2{font-size:var(--fs-h2);line-height:1.15;letter-spacing:-.01em;margin-bottom:var(--sp-lg)}
+.h3{font-size:var(--fs-h3);line-height:1.25;margin:var(--sp-xl) 0 var(--sp-md)}
+.cap{font-size:var(--fs-cap);line-height:1.615;color:#7a7a7a} .dark .cap{color:var(--mist)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-md)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-md)}
+@media(max-width:820px){.grid2,.grid3{grid-template-columns:1fr}.h2{font-size:34px}}
+.card{background:var(--paper);border:1px solid #ededed;border-radius:10px;padding:var(--sp-md)}
+.swatch{border-radius:10px;overflow:hidden;border:1px solid #ededed;background:var(--paper)}
+.swatch .chip{height:89px} .swatch .meta{padding:var(--sp-sm) var(--sp-md);font-size:var(--fs-cap);line-height:1.6;color:#555}
+.swatch .meta b{font-family:Montserrat;font-weight:600;font-size:15px;display:block;color:var(--ink)}
+.logo-tile{border-radius:10px;padding:var(--sp-xl);display:flex;align-items:center;justify-content:center;min-height:210px}
+.logo-tile img{max-width:78%;height:auto}
+.rulebox{border-left:3px solid var(--green-deep);padding:var(--sp-sm) var(--sp-md);background:#fafafa;border-radius:0 8px 8px 0;margin:var(--sp-md) 0}
+.dark .rulebox{background:var(--surface);border-left-color:var(--green)}
+table{border-collapse:collapse;width:100%;font-size:16px;background:var(--paper);color:var(--ink)}
+th,td{border:1px solid #e6e6e6;padding:10px 14px;text-align:left;vertical-align:top}
+th{font-family:Montserrat;font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;background:#fafafa}
+.pass{color:var(--green-deep);font-weight:700}
+.footer{background:var(--ink);color:var(--mist);padding:var(--sp-lg) 28px;font-size:var(--fs-cap)}
+.footer .in{max-width:var(--maxw);margin:0 auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.footer a{color:var(--green);text-decoration:none;border-bottom:1px solid var(--green)}
+.pagenav{display:flex;justify-content:space-between;gap:16px;max-width:var(--maxw);margin:0 auto;padding:var(--sp-lg) 28px}
+.pagenav a{font-family:Montserrat;font-weight:600;font-size:14px;color:var(--green-deep);text-decoration:none}
+</style></head>
+<body>
+<nav class="nav"><div class="in"><a href="index.html"><img src="primo-lockup-on-dark.svg" alt="Primo"></a><div class="links"><a href="index.html">Overview</a><a href="logo.html">Logo</a><a href="color-and-type.html">Colour & Type</a><a href="templates.html">Templates</a><a href="social-media.html">Social Media</a><a href="motion.html" class="on">Motion</a><a href="rules-of-use.html">Rules of Use</a></div></div></nav>
+
+<header class="band dark" style="padding-bottom:var(--sp-xl)"><div class="band-inner">
+<div class="eyebrow"><span class="sq"></span>07 · MOTION — PRIMO-MOTION</div>
+<h1 class="h2">The system, in time.</h1>
+<p style="color:var(--mist)">primo-motion is Primo's Remotion pipeline for data videos and animated infographics. It reads <code>dist/tokens.ts</code> — the same tokens as everything else — so a colour or type change propagates to video with zero hand-copying. Motion itself is tokenized: durations come from the Fibonacci sequence in milliseconds, so pacing is as traceable as spacing.</p>
+</div></header>
+
+<section class="band" style="padding-top:var(--sp-xl)"><div class="band-inner">
+<div class="eyebrow"><span class="sq"></span>RENDERS — THE THREE DELIVERY FORMATS</div>
+<p>Live output from the pipeline. To update: render a 6–10s loop per format, compress (<code>ffmpeg -i in.mp4 -crf 28 -movflags +faststart out.mp4</code>, target &lt; 8&nbsp;MB), and drop into <code>media/</code> with these exact names.</p>
+<div class="grid3" style="align-items:start">
+<div>
+<div style="aspect-ratio:4/5;background:#1A1B2E;border-radius:12px;overflow:hidden;position:relative">
+<video autoplay muted loop playsinline preload="metadata" style="width:100%;height:100%;object-fit:cover;display:block"
+ onloadeddata="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+<source src="media/motion-45.mp4" type="video/mp4"></video>
+<div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:#B1B1B1">
+<div style="width:55px;height:38px;background:#12B981;border-radius:9px;display:flex;align-items:center;justify-content:center"><span style="width:0;height:0;border-style:solid;border-width:8px 0 8px 13px;border-color:transparent transparent transparent #1A1B2E"></span></div>
+<span style="font-family:Montserrat;font-weight:600;font-size:12px;letter-spacing:.14em">DROP RENDER: media/motion-45.mp4</span></div>
+</div>
+<p class="cap" style="margin-top:8px"><b style="color:var(--ink)">Feed data video (1080×1350)</b><br>The workhorse — stat builds and chart reveals for LinkedIn and Instagram feed.</p></div>
+<div>
+<div style="aspect-ratio:9/16;background:#1A1B2E;border-radius:12px;overflow:hidden;position:relative">
+<video autoplay muted loop playsinline preload="metadata" style="width:100%;height:100%;object-fit:cover;display:block"
+ onloadeddata="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+<source src="media/motion-916.mp4" type="video/mp4"></video>
+<div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:#B1B1B1">
+<div style="width:55px;height:38px;background:#12B981;border-radius:9px;display:flex;align-items:center;justify-content:center"><span style="width:0;height:0;border-style:solid;border-width:8px 0 8px 13px;border-color:transparent transparent transparent #1A1B2E"></span></div>
+<span style="font-family:Montserrat;font-weight:600;font-size:12px;letter-spacing:.14em">DROP RENDER: media/motion-916.mp4</span></div>
+</div>
+<p class="cap" style="margin-top:8px"><b style="color:var(--ink)">Story / Reel (1080×1920)</b><br>Vertical cut — same tokens, safe areas respected, headline at golden section.</p></div>
+<div>
+<div style="aspect-ratio:16/9;background:#1A1B2E;border-radius:12px;overflow:hidden;position:relative">
+<video autoplay muted loop playsinline preload="metadata" style="width:100%;height:100%;object-fit:cover;display:block"
+ onloadeddata="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+<source src="media/motion-169.mp4" type="video/mp4"></video>
+<div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:#B1B1B1">
+<div style="width:55px;height:38px;background:#12B981;border-radius:9px;display:flex;align-items:center;justify-content:center"><span style="width:0;height:0;border-style:solid;border-width:8px 0 8px 13px;border-color:transparent transparent transparent #1A1B2E"></span></div>
+<span style="font-family:Montserrat;font-weight:600;font-size:12px;letter-spacing:.14em">DROP RENDER: media/motion-169.mp4</span></div>
+</div>
+<p class="cap" style="margin-top:8px"><b style="color:var(--ink)">Landscape (1920×1080)</b><br>YouTube, embeds, decks — the presentation cut.</p></div>
+</div>
+</div></section>
+
+<section class="band parch"><div class="band-inner">
+<div class="eyebrow"><span class="sq"></span>THE SIGNATURE MOVES — LIVE, FROM TOKENS</div>
+<p>Three motion behaviours define the house style. The demos below run in your browser, generated from the same token values Remotion uses — the book demonstrates motion without waiting for a render.</p>
+<div class="grid3" style="align-items:start">
+
+<div class="card"><span class="cap">01 · HEADLINE REVEAL</span>
+<div style="background:#1A1B2E;border-radius:10px;padding:26px;margin-top:10px;min-height:150px;overflow:hidden">
+<div class="m-reveal" style="font-family:Montserrat;font-weight:800;font-size:26px;line-height:1.2;color:#fff">Meaning that<br><span style="color:#12B981">moves institutions.</span></div>
+</div>
+<p style="font-size:14px;margin:10px 0 0">Rise + fade, 550ms, decelerating. Accent phrase lands 210ms after the base line — hierarchy in time, not just size.</p></div>
+
+<div class="card"><span class="cap">02 · STAT COUNT-UP</span>
+<div style="background:#fff;border:1px solid #ededed;border-radius:10px;padding:26px;margin-top:10px;min-height:150px">
+<div style="font-family:Montserrat;font-weight:800;font-size:52px;color:#1A1B2E"><span class="m-count" data-to="80">0</span><span style="color:#0A6B4B">M</span></div>
+<div class="cap">mentions in one year — 890ms count, eased out</div>
+</div>
+<p style="font-size:14px;margin:10px 0 0">Numbers earn their size by arriving: 890ms count-up, hold ≥ 1300ms before any exit. One counting number per scene.</p></div>
+
+<div class="card"><span class="cap">03 · CHART BUILD-IN</span>
+<div style="background:#fff;border:1px solid #ededed;border-radius:10px;padding:26px 26px 12px;margin-top:10px;min-height:150px;display:flex;align-items:flex-end;gap:9px;height:170px">
+<div class="m-bar" style="flex:1;background:#12B981;height:92%;border-radius:5px 5px 0 0;transform-origin:bottom;animation-delay:0ms"></div><div class="m-bar" style="flex:1;background:#F0E442;height:72%;border-radius:5px 5px 0 0;transform-origin:bottom;animation-delay:130ms"></div><div class="m-bar" style="flex:1;background:#D55E00;height:56%;border-radius:5px 5px 0 0;transform-origin:bottom;animation-delay:260ms"></div><div class="m-bar" style="flex:1;background:#B39DDB;height:42%;border-radius:5px 5px 0 0;transform-origin:bottom;animation-delay:390ms"></div><div class="m-bar" style="flex:1;background:#7E57C2;height:30%;border-radius:5px 5px 0 0;transform-origin:bottom;animation-delay:520ms"></div>
+</div>
+<p style="font-size:14px;margin:10px 0 0">Bars grow bottom-up, 340ms each, staggered 130ms — the five-series ramp, direct-labelled in production, never more than five.</p></div>
+</div>
+</div></section>
+
+<section class="band"><div class="band-inner">
+<div class="eyebrow"><span class="sq"></span>MOTION TOKENS — THE RULES OF TIME</div>
+<table>
+<tr><th>Token</th><th>Value</th><th>Use</th></tr>
+<tr><td>duration.xs</td><td>130 ms</td><td>Stagger step between siblings (bars, list items)</td></tr>
+<tr><td>duration.sm</td><td>210 ms</td><td>Secondary element entrances; accent-phrase delay</td></tr>
+<tr><td>duration.md</td><td>340 ms</td><td>Single element build (a bar, a card)</td></tr>
+<tr><td>duration.lg</td><td>550 ms</td><td>Headline reveal; scene element hero entrance</td></tr>
+<tr><td>duration.xl</td><td>890 ms</td><td>Count-ups; full-scene transitions</td></tr>
+<tr><td>hold.min</td><td>1300 ms</td><td>Minimum hold after any build before exit — legibility floor</td></tr>
+<tr><td>easing</td><td>cubic-bezier(0.22, 1, 0.36, 1)</td><td>Decelerating ("ease-out-quint") for entrances; linear only for count-ups</td></tr>
+</table>
+<div class="rulebox"><b style="font-family:Montserrat;font-size:16px">Add to tokens.json (proposed canon).</b><span style="font-size:17px"> Motion values are not yet in the kit — add the block below, re-run <code>build.py</code>, and Remotion inherits them through <code>tokens.ts</code>:</span>
+<pre style="font-size:14px;line-height:1.5;overflow:auto;background:#1A1B2E;color:#d6d6de;padding:16px;border-radius:8px;margin:12px 0 0">"motion": {
+  "duration": { "xs": 130, "sm": 210, "md": 340, "lg": 550, "xl": 890 },
+  "holdMin": 1300,
+  "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+  "why": "Fibonacci milliseconds — pacing as traceable as spacing. Hold floor protects legibility (WCAG 2.2.2 pause/stop thinking applies to autoplaying loops)."
+}</pre></div>
+<h3 class="h3">Motion do-nots</h3>
+<ul style="font-size:19px;max-width:66ch">
+<li>Do not animate more than one counting number per scene.</li>
+<li>Do not exit any text before its 1300ms hold.</li>
+<li>Do not ease-in entrances — elements decelerate into place.</li>
+<li>Do not flash: no element blinks more than three times per second (WCAG 2.3.1).</li>
+<li>Do not autoplay with sound; captions on every voiced video.</li>
+<li>Do not hand-copy hex into compositions — import from <code>tokens.ts</code>.</li>
+</ul>
+</div></section>
+
+<style>
+@keyframes mReveal{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+.m-reveal{animation:mReveal 550ms cubic-bezier(0.22,1,0.36,1) both}
+@keyframes mGrow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+.m-bar{animation:mGrow 340ms cubic-bezier(0.22,1,0.36,1) both}
+</style>
+<script>
+document.querySelectorAll('.m-count').forEach(el=>{
+  const to=+el.dataset.to, t0=performance.now(), D=890;
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;io.disconnect();
+    const start=performance.now();
+    const tick=n=>{const p=Math.min(1,(n-start)/D);el.textContent=Math.round(to*p);if(p<1)requestAnimationFrame(tick)};
+    requestAnimationFrame(tick);}));
+  io.observe(el);});
+// replay demos when scrolled into view
+const rep=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.style.animation='none';e.target.offsetHeight;e.target.style.animation='';}}),{threshold:.4});
+document.querySelectorAll('.m-reveal,.m-bar').forEach(el=>rep.observe(el));
+</script>
+<div class="pagenav"><a href="social-media.html">← Social Media</a><a href="rules-of-use.html">Rules of Use →</a></div>
+
+<div class="footer"><div class="in"><span>Primo Strategic Communication LLC · Brand Book v2.0 · Built to be received by everyone</span><span>Source of truth: tokens.json (primo-brand skill) · <a href="https://w0rldcit1zen.github.io/Portfolio/">Portfolio</a></span></div></div>
+</body></html>

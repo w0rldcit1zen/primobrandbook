@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Primo Brand — Colour & Type</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1A1B2E;--surface:#2C2F3F;--green:#12B981;--green-deep:#0A6B4B;--parchment:#EFE1CC;--mist:#B1B1B1;--paper:#FFFFFF;
+--c1:#12B981;--c2:#F0E442;--c3:#D55E00;--c4:#B39DDB;--c5:#7E57C2;
+--fs-h2:55px;--fs-h3:34px;--fs-body:21px;--fs-cap:13px;--sp-sm:13px;--sp-md:21px;--sp-lg:34px;--sp-xl:55px;--sp-2xl:89px;--maxw:1080px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Roboto,system-ui,sans-serif;font-size:var(--fs-body);line-height:1.619;color:var(--ink);background:var(--paper)}
+h1,h2,h3{font-family:Montserrat,system-ui,sans-serif;font-weight:800;margin:0}
+p{max-width:66ch} a{color:inherit}
+.nav{position:sticky;top:0;z-index:9;background:var(--ink);border-bottom:1px solid #10111D}
+.nav .in{max-width:var(--maxw);margin:0 auto;padding:0 28px;height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav img{height:26px;display:block}
+.nav .links{display:flex;gap:22px;flex-wrap:wrap}
+.nav .links a{font-family:Montserrat;font-weight:600;font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--mist);text-decoration:none}
+.nav .links a.on,.nav .links a:hover{color:var(--green)}
+.band{padding:var(--sp-2xl) 28px} .band-inner{max-width:var(--maxw);margin:0 auto}
+.dark{background:var(--ink);color:var(--paper)} .parch{background:var(--parchment)}
+.eyebrow{display:inline-flex;align-items:center;gap:11px;font-family:Montserrat;font-weight:600;font-size:var(--fs-cap);letter-spacing:.32em;text-transform:uppercase;color:#7a7a7a;margin-bottom:var(--sp-lg)}
+.eyebrow .sq{width:9px;height:9px;background:var(--green-deep)}
+.dark .eyebrow{color:var(--mist)} .dark .eyebrow .sq{background:var(--green)}
+.h2{font-size:var(--fs-h2);line-height:1.15;letter-spacing:-.01em;margin-bottom:var(--sp-lg)}
+.h3{font-size:var(--fs-h3);line-height:1.25;margin:var(--sp-xl) 0 var(--sp-md)}
+.cap{font-size:var(--fs-cap);line-height:1.615;color:#7a7a7a} .dark .cap{color:var(--mist)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-md)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-md)}
+@media(max-width:820px){.grid2,.grid3{grid-template-columns:1fr}.h2{font-size:34px}}
+.card{background:var(--paper);border:1px solid #ededed;border-radius:10px;padding:var(--sp-md)}
+.swatch{border-radius:10px;overflow:hidden;border:1px solid #ededed;background:var(--paper)}
+.swatch .chip{height:89px} .swatch .meta{padding:var(--sp-sm) var(--sp-md);font-size:var(--fs-cap);line-height:1.6;color:#555}
+.swatch .meta b{font-family:Montserrat;font-weight:600;font-size:15px;display:block;color:var(--ink)}
+.logo-tile{border-radius:10px;padding:var(--sp-xl);display:flex;align-items:center;justify-content:center;min-height:210px}
+.logo-tile img{max-width:78%;height:auto}
+.rulebox{border-left:3px solid var(--green-deep);padding:var(--sp-sm) var(--sp-md);background:#fafafa;border-radius:0 8px 8px 0;margin:var(--sp-md) 0}
+.dark .rulebox{background:var(--surface);border-left-color:var(--green)}
+table{border-collapse:collapse;width:100%;font-size:16px;background:var(--paper);color:var(--ink)}
+th,td{border:1px solid #e6e6e6;padding:10px 14px;text-align:left;vertical-align:top}
+th{font-family:Montserrat;font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;background:#fafafa}
+.pass{color:var(--green-deep);font-weight:700}
+.footer{background:var(--ink);color:var(--mist);padding:var(--sp-lg) 28px;font-size:var(--fs-cap)}
+.footer .in{max-width:var(--maxw);margin:0 auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.footer a{color:var(--green);text-decoration:none;border-bottom:1px solid var(--green)}
+.pagenav{display:flex;justify-content:space-between;gap:16px;max-width:var(--maxw);margin:0 auto;padding:var(--sp-lg) 28px}
+.pagenav a{font-family:Montserrat;font-weight:600;font-size:14px;color:var(--green-deep);text-decoration:none}
+</style></head>
+<body>
+<nav class="nav"><div class="in"><a href="index.html"><img src="primo-lockup-on-dark.svg" alt="Primo"></a><div class="links"><a href="index.html">Overview</a><a href="logo.html">Logo</a><a href="color-and-type.html" class="on">Colour & Type</a><a href="templates.html">Templates</a><a href="social-media.html">Social Media</a><a href="motion.html">Motion</a><a href="rules-of-use.html">Rules of Use</a></div></div></nav>
+
+<header class="band dark" style="padding-bottom:var(--sp-xl)"><div class="band-inner">
+<div class="eyebrow"><span class="sq"></span>03 · COLOUR &amp; TYPE</div>
+<h1 class="h2">A green that means go.</h1>
+<p style="color:var(--mist)">Signal Green is the brand in one colour. A signal is what communication is — something sent, received, understood. And green is the light that says <em>move</em>: ready to go, cleared to proceed. It carries movement and readiness in a field where every competitor — the big consultancies, the UN system itself — is blue. Around it: the deep calm of Indigo, the warmth of Parchment (the colour of paper, letters, stories kept), and the quiet grays that let the signal be heard. Chosen for meaning; proven by measurement.</p>
+</div></header>
+<section class="band" style="padding-top:var(--sp-xl)"><div class="band-inner">
+<div class="grid3">
+<div class="swatch"><div class="chip" style="background:#1A1B2E"></div><div class="meta"><b>Deep Indigo · #1A1B2E</b>The base. Institutional weight without the glare of pure black — the room at night where the stories get told.</div></div>
+<div class="swatch"><div class="chip" style="background:#2C2F3F"></div><div class="meta"><b>Slate · #2C2F3F</b>Raised surface — cards and panels on Indigo.</div></div>
+<div class="swatch"><div class="chip" style="background:#12B981"></div><div class="meta"><b>Signal Green · #12B981</b>The signal itself, on DARK backgrounds. Movement, readiness, go. Measured 6.68:1 on Indigo — clears AA for body text.</div></div>
+<div class="swatch"><div class="chip" style="background:#0A6B4B"></div><div class="meta"><b>Signal Green Deep · #0A6B4B</b>The same signal for LIGHT backgrounds — mandatory there. Measured 6.53:1 on white.</div></div>
+<div class="swatch"><div class="chip" style="background:#EFE1CC"></div><div class="meta"><b>Parchment · #EFE1CC</b>The warm surface — paper, letters, the family table. Warmth as a place to read, never as an accent.</div></div>
+<div class="swatch"><div class="chip" style="background:#B1B1B1"></div><div class="meta"><b>Mist Gray · #B1B1B1</b>Metadata and secondary text on dark.</div></div>
+<div class="swatch"><div class="chip" style="background:#FFFFFF"></div><div class="meta"><b>Paper White · #FFFFFF</b>Type on dark; light surface.</div></div>
+</div>
+<h3 class="h3">The rule that is easiest to break</h3>
+<div class="grid2">
+<div class="card" style="background:var(--ink);color:var(--paper);border-color:var(--ink)"><span class="cap" style="color:var(--mist)">ON DARK</span><p style="margin:8px 0 0">Use <span style="color:var(--green);font-weight:700">Signal Green #12B981</span> — measured 6.68:1.</p></div>
+<div class="card"><span class="cap">ON LIGHT (WHITE / PARCHMENT)</span><p style="margin:8px 0 0">Use <span style="color:var(--green-deep);font-weight:700">Signal Green Deep #0A6B4B</span> — measured 6.53:1. Bright Signal Green on white is <b>2.54:1 — a signal nobody can read.</b></p></div>
+</div>
+<h3 class="h3">Retired — and the real reasons</h3>
+<table><tr><th>Colour</th><th>Why</th></tr>
+<tr><td>Teal #4A7C7D</td><td>3.60:1 on indigo — too quiet to be received.</td></tr>
+<tr><td>Amber #D4A373 as accent</td><td>Merges with Signal Green for colour-blind readers (ΔE 3.0 under protanopia). Its warmth lives on as the Parchment surface.</td></tr>
+<tr><td>Heritage Green #0CE198</td><td>1.72:1 on white — the founding green, retired with respect because it could not be read by everyone.</td></tr></table>
+</div></section>
+<section class="band dark"><div class="band-inner">
+<div class="eyebrow"><span class="sq"></span>TYPE — ONE SEQUENCE, EVERY SIZE</div>
+<p style="color:var(--mist)">Montserrat 800 for display and headings; Roboto for text. Every size comes from one sequence — 13 · 21 · 34 · 55 · 89 · 144 — so every relationship is traceable and no decision is arbitrary. Discipline you can see.</p>
+<div style="border-bottom:1px solid #3a3d4f;padding:13px 0"><span style="font-family:Montserrat;font-weight:800;font-size:89px">Aa 89</span> <span class="cap">H1 · line-height 1.1</span></div>
+<div style="border-bottom:1px solid #3a3d4f;padding:13px 0"><span style="font-family:Montserrat;font-weight:800;font-size:55px">Aa 55</span> <span class="cap">H2 · 1.15</span></div>
+<div style="border-bottom:1px solid #3a3d4f;padding:13px 0"><span style="font-family:Montserrat;font-weight:800;font-size:34px">Aa 34</span> <span class="cap">H3 · 1.25</span></div>
+<div style="border-bottom:1px solid #3a3d4f;padding:13px 0"><span style="font-size:21px">Aa 21 — body is 21px on 34px leading (1.619): comfortable to read, compliant by construction.</span> <span class="cap">Body · Roboto 400</span></div>
+<div style="padding:13px 0"><span style="font-size:13px">Aa 13 — labels, captions, metadata only. Never body copy.</span> <span class="cap">Caption · 1.615</span></div>
+<p class="cap">Measure: 66ch maximum line length. Display 144px reserved for hero moments. Spacing uses the same sequence in px. Focal elements land on the golden section (0.382 / 0.618) — one consistent, traceable ratio; no claims of cosmic beauty.</p>
+</div></section>
+<div class="pagenav"><a href="logo.html">← Logo</a><a href="templates.html">Templates →</a></div>
+
+<div class="footer"><div class="in"><span>Primo Strategic Communication LLC · Brand Book v2.0 · Built to be received by everyone</span><span>Source of truth: tokens.json (primo-brand skill) · <a href="https://w0rldcit1zen.github.io/Portfolio/">Portfolio</a></span></div></div>
+</body></html>
